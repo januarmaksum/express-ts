@@ -19,12 +19,6 @@ temp/
 dist/
 build/
 
-# IDEs and Editors
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
 # Operating System files
 .DS_Store
 Thumbs.db
