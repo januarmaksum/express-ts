@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1bba83ec-a5e1-4cd2-98f2-419fbd5b4abc",
+    "userLogin": "admin",
+    "userPass": "$2b$10$hashedpasswordforadmin",
+    "userNicename": "admin",
+    "userEmail": "admin@example.com",
+    "userStatus": 1,
+    "displayName": "Administrator",
+    "userRegistered": "2025-04-15T00:00:00.000Z",
+    "updatedAt": "2025-04-15T00:00:00.000Z",
+    "terminatedAt": null,
+    "role": "ADMINISTRATOR"
+  },
+  {
+    "id": "66f2cfc0-4b2a-4758-a74f-29dcbf9b23ee",
+    "userLogin": "johndoe",
+    "userPass": "$2b$10$hashedpasswordfordoe",
+    "userNicename": "john",
+    "userEmail": "john@example.com",
+    "userStatus": 1,
+    "displayName": "John Doe",
+    "userRegistered": "2025-04-15T00:00:00.000Z",
+    "updatedAt": "2025-04-15T00:00:00.000Z",
+    "terminatedAt": null,
+    "role": "AUTHOR"
+  }
+]

@@ -6,7 +6,7 @@ import { ERROR_MESSAGES, SUCCESS_MESSAGES } from '../constants/message';
 export async function getUsers(req: Request, res: Response) {
   try {
     const users = await userQuery.getUsers();
-    returnSuccess(req, res, 200, SUCCESS_MESSAGES.USER_GET_SUCCESS, users);
+    returnSuccess(req, res, 200, SUCCESS_MESSAGES.SUCCESS, users);
   } catch (error: unknown) {
     if (error instanceof Error) {
       returnNonSuccess(req, res, 500, error.message);

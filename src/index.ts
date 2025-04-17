@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express';
 import env from './config/env.config';
+import router from './routes';
 
 const app: Application = express();
 
@@ -20,6 +21,9 @@ app.use((err: Error, _req: Request, res: Response, _next: express.NextFunction) 
   console.error(err.stack);
   res.status(500).json({ error: err.message });
 });
+
+// API Routes
+app.use('/api', router);
 
 // Create HTTP server instance
 const server = app.listen(PORT, (error?: Error | null) => {

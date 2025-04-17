@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { ERROR_MESSAGES, SUCCESS_MESSAGES } from '../constants/message';
 
 export function returnSuccess(
   _req: Request,
@@ -9,8 +8,10 @@ export function returnSuccess(
   data: unknown
 ) {
   const returnResponse = {
-    status: SUCCESS_MESSAGES.STATUS_OK,
-    message,
+    meta: {
+      status: statusCode,
+      message,
+    },
     data,
   };
   return res.status(statusCode).json(returnResponse);
@@ -22,5 +23,12 @@ export function returnNonSuccess(
   statusCode: number,
   message: string
 ) {
-  return res.status(statusCode).json({ status: ERROR_MESSAGES.STATUS_ERROR, message });
+  const returnResponse = {
+    meta: {
+      status: statusCode,
+      message,
+    },
+    data: null,
+  };
+  return res.status(statusCode).json(returnResponse);
 }

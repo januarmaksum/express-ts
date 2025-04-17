@@ -10,5 +10,6 @@ export interface User {
   displayName: string;
   userRegistered: Date;
   updatedAt: Date;
+  terminatedAt: Date | null;
   role: UserRole;
 }

@@ -4,13 +4,10 @@ export const ERROR_MESSAGES = {
   UNAUTHORIZED: 'Unauthorized access',
   FORBIDDEN: 'Forbidden action',
   BAD_REQUEST: 'Bad request',
-  STATUS_ERROR: 'ERROR',
+  STATUS_ERROR: 'error',
 };
 
 export const SUCCESS_MESSAGES = {
-  STATUS_OK: 'OK',
-  USER_GET_SUCCESS: 'Successfully retrieved users',
-  USER_CREATED: 'User successfully created',
-  POST_PUBLISHED: 'Post has been published',
-  LOGIN_SUCCESS: 'Login successful',
+  STATUS_OK: 'ok',
+  SUCCESS: 'success',
 };

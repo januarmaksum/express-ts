@@ -19,6 +19,8 @@
   "license": "ISC",
   "description": "Boilerplate for building a full-stack web application",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "bcrypt": "^5.1.1",
     "dayjs": "^1.11.13",
     "express": "^5.1.0",
     "prisma": "^6.6.0",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@prisma/client": "^6.6.0",
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
     "@types/swagger-jsdoc": "^6.0.4",
@@ -44,5 +47,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }
