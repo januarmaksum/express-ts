@@ -18,6 +18,7 @@ temp/
 # Build directory (for if you’re using TypeScript or Babel)
 dist/
 build/
+public/
 
 # IDEs and Editors
 .vscode/
