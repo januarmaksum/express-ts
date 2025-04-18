@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
-    "start": "node api/index.ts",
+    "start": "node public/index.js",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "test": "echo \"No tests yet\" && exit 0",
