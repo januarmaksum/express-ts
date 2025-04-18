@@ -1,11 +1,13 @@
 import express, { Application, Request, Response } from 'express';
-import env from './config/env.config';
 import router from './routes';
 
-const app: Application = express();
-
 // Load environment variables from .env file
-const PORT = env.PORT;
+import dotenv from 'dotenv';
+dotenv.config();
+const PORT = process.env.PORT || 3000;
+
+// Initialize app
+const app: Application = express();
 
 // Middleware
 app.use(express.json());
