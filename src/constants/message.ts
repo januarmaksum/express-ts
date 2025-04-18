@@ -11,3 +11,12 @@ export const SUCCESS_MESSAGES = {
   STATUS_OK: 'ok',
   SUCCESS: 'success',
 };
+
+export const USER_MESSAGES = {
+  GET: 'Success get users',
+  GET_BY_ID: 'Success get user by id',
+  CREATE: 'Success create user',
+  UPDATE: 'Success update user',
+  DELETE: 'Success delete user',
+  NOT_FOUND: 'User not found',
+};
