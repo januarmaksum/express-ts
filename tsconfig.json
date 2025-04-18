@@ -3,7 +3,7 @@
     "target": "ES2020",
     "module": "commonjs",
     "rootDir": "src",
-    "outDir": "dist",
+    "outDir": "public",
     "sourceRoot": "src",
     "resolveJsonModule": true,
     "allowJs": true,
@@ -15,5 +15,5 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "coverage", "prisma"]
+  "exclude": ["node_modules", "public", "coverage", "prisma"]
 }
